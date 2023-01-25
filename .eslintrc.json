@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "google"
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-tabs": "off",
+    "linebreak-style": "off",
+    "indent": ["error", "tab"],
+    "max-len": ["error", { "code": 160 }]
+  }
 }
